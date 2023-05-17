@@ -16,6 +16,7 @@ func GetConfigSystem(d *schema.ResourceData) models.ConfigBodySystemPost {
 		RobotTokenDuration:         d.Get("robot_token_expiration").(int),
 		QuotaPerProjectEnable:      true,
 		RobotNamePrefix:            d.Get("robot_name_prefix").(string),
+		ScannerSkipUpdatePulltime:  d.Get("scanner_skip_update_pulltime").(bool),
 	}
 	log.Printf("[DEBUG] %+v\n ", body)
 	return body

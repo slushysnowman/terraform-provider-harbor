@@ -48,6 +48,7 @@ type ConfigBodySystemPost struct {
 	QuotaPerProjectEnable      bool   `json:"quota_per_project_enable"`
 	RobotNamePrefix            string `json:"robot_name_prefix,omitempty"`
 	StoragePerProject          string `json:"storage_per_project,omitempty"`
+	ScannerSkipUpdatePulltime  bool   `json:"scanner_skip_update_pulltime,omitempty"`
 }
 
 type ConfigBodyEmailPost struct {

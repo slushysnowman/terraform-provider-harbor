@@ -28,6 +28,11 @@ func resourceConfigSystem() *schema.Resource {
 				Type:     schema.TypeString,
 				Optional: true,
 			},
+			"scanner_skip_update_pulltime": {
+				Type:     schema.TypeBool,
+				Optional: true,
+				Default:  false,
+			},
 		},
 		Create: resourceConfigSystemCreate,
 		Read:   resourceConfigSystemRead,
